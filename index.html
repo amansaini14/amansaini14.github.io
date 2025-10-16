@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Aman Saini — ML Engineer</title>
-  <meta name="description" content="Aman Saini — Machine Learning Engineer. Resume-based personal site." />
+  <meta name="description" content="Aman Saini — Machine Learning Engineer. Resume‑based personal site." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -13,171 +13,232 @@
   <style>
     html { scroll-behavior: smooth; }
     body { font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; }
-    .tag { @apply inline-flex items-center rounded-full border border-amber-500/40 bg-amber-400/5 px-2.5 py-1 text-xs font-medium text-amber-300; }
-    .card { @apply rounded-2xl border border-zinc-800 bg-zinc-950/60 p-5 shadow-lg shadow-black/40; }
-    .linkish { @apply text-zinc-300 hover:text-amber-300; }
   </style>
 </head>
-<body class="bg-zinc-950 text-zinc-100">
-  <!-- Shell -->
-  <main class="mx-auto grid min-h-screen max-w-6xl grid-cols-1 gap-6 px-4 py-8 md:grid-cols-3 md:py-12">
-    <!-- Left column (profile / sticky) -->
-    <aside class="md:col-span-1">
-      <div class="card sticky top-6">
-        <div class="flex items-center gap-4">
-          <div class="h-16 w-16 overflow-hidden rounded-2xl ring-2 ring-amber-400/60">
-            <!-- Replace src with your LinkedIn photo URL (square works best) -->
-            <img src="https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?q=80&w=256&auto=format&fit=crop" alt="Aman headshot" class="h-full w-full object-cover"/>
+<body class="bg-white text-zinc-800">
+  <!-- Header / Hero -->
+  <header class="border-b border-zinc-200 bg-white/80 backdrop-blur supports-[backdrop-filter]:bg-white/70 sticky top-0 z-50">
+    <div class="mx-auto flex max-w-3xl items-center justify-between px-5 py-4">
+      <a href="#top" class="text-[15px] font-semibold tracking-tight">Aman Saini</a>
+      <nav class="hidden gap-6 text-sm sm:flex">
+        <a href="#experience" class="hover:text-blue-600">Experience</a>
+        <a href="#publications" class="hover:text-blue-600">Publications</a>
+        <a href="#education" class="hover:text-blue-600">Education</a>
+        <a href="#contact" class="hover:text-blue-600">Contact</a>
+        <a href="Aman_Saini_Resume.pdf" class="rounded-lg border border-blue-300 px-3 py-1.5 font-medium text-blue-700 hover:bg-blue-50">Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top" class="mx-auto max-w-3xl px-5">
+    <!-- Top card -->
+    <section class="pt-10 sm:pt-14">
+      <div class="flex items-start gap-5">
+        <!-- Photo: replace src with your headshot path (e.g., ./headshot.jpg) -->
+        <img class="h-20 w-20 rounded-2xl object-cover ring-2 ring-blue-200" src="https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?q=80&w=256&auto=format&fit=crop" alt="Aman headshot"/>
+        <div>
+          <h1 class="text-2xl font-semibold leading-snug">Machine Learning Engineer</h1>
+          <p class="mt-1 text-[15px] text-zinc-600">I build, evaluate, and productionize NLP/LLM systems — instruction-/task‑tuned models, rubric/eval tooling, entity linking & NER, and generative features at scale.</p>
+          <div class="mt-3 flex flex-wrap items-center gap-x-4 gap-y-2 text-sm">
+            <a class="text-blue-700 hover:underline" href="mailto:saini.aman.personal@gmail.com">saini.aman.personal@gmail.com</a>
+            <span class="hidden text-zinc-400 sm:inline">•</span>
+            <span class="text-zinc-600">Vancouver, BC, Canada</span>
+            <span class="hidden text-zinc-400 sm:inline">•</span>
+            <a class="text-zinc-700 hover:text-blue-700 hover:underline" href="https://www.linkedin.com/in/amansaini/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="text-zinc-700 hover:text-blue-700 hover:underline" href="#" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="text-zinc-700 hover:text-blue-700 hover:underline" href="#" target="_blank" rel="noreferrer">Twitter/X</a>
           </div>
-          <div>
-            <h1 class="text-xl font-semibold leading-tight">Aman Saini</h1>
-            <p class="text-sm text-zinc-400">Machine Learning Engineer</p>
-          </div>
         </div>
-
-        <div class="mt-5 flex flex-wrap gap-2">
-          <span class="tag">LLMs</span>
-          <span class="tag">NLP</span>
-          <span class="tag">Evaluation</span>
-          <span class="tag">Production ML</span>
-        </div>
-
-        <div class="mt-6 grid gap-2 text-sm">
-          <a class="linkish" href="mailto:saini.aman.personal@gmail.com">saini.aman.personal@gmail.com</a>
-          <div class="text-zinc-400">Vancouver, BC, Canada</div>
-        </div>
-
-        <div class="mt-6 flex gap-3 text-sm">
-          <a class="rounded-xl border border-amber-400/40 px-3 py-1.5 font-medium text-amber-300 hover:bg-amber-400/10" href="#contact">Contact</a>
-          <a class="rounded-xl border border-zinc-700 px-3 py-1.5 font-medium hover:bg-zinc-900" href="Aman_Saini_Resume.pdf" target="_blank" rel="noreferrer">Resume</a>
-        </div>
-
-        <!-- Socials -->
-        <div class="mt-6 flex items-center gap-4 text-sm">
-          <a class="linkish" href="https://www.linkedin.com/in/amansaini/" target="_blank" rel="noreferrer">LinkedIn</a>
-          <a class="linkish" href="#" target="_blank" rel="noreferrer">GitHub</a>
-          <a class="linkish" href="#" target="_blank" rel="noreferrer">Twitter/X</a>
-        </div>
-
-        <div class="mt-6 h-px w-full bg-zinc-800"></div>
-        <nav class="mt-4 grid gap-2 text-sm">
-          <a class="linkish" href="#work">Where I Work</a>
-          <a class="linkish" href="#experience">Past Experiences</a>
-          <a class="linkish" href="#publications">Publications</a>
-          <a class="linkish" href="#education">Education</a>
-        </nav>
       </div>
-    </aside>
+    </section>
 
-    <!-- Right column (content) -->
-    <section class="md:col-span-2 space-y-6">
-      <!-- Intro banner -->
-      <div class="card">
-        <h2 class="text-lg font-semibold">About</h2>
-        <p class="mt-2 text-zinc-300">I build, evaluate, and productionize NLP/LLM systems: instruction-/task-tuned models, rubric/eval tooling, entity linking & NER, and generative features at scale.</p>
-      </div>
-
-      <!-- Where I Work -->
-      <section id="work" class="card">
-        <div class="flex items-start justify-between">
-          <h2 class="text-lg font-semibold">Where I Work</h2>
-          <span class="text-xs text-zinc-400">Vancouver, BC</span>
-        </div>
-        <div class="mt-3">
-          <p class="font-medium">Grammarly — Staff ML Engineer (L5) • Oct 2023 – Present</p>
-          <ul class="ml-5 mt-2 list-disc space-y-1 text-sm text-zinc-300">
-            <li>Strategic Research org advancing LLM capabilities in the writing space; built Generative AI features.</li>
-            <li>Fine‑tuned LLMs (e.g., Llama/GPT) for fine‑grained writing assistance; instruction‑tuned Llama 3.1 (70B/8B) teacher models.</li>
-            <li>Built evaluation pipelines using LLM‑as‑a‑Judge; scaled synthetic data for internal LLMs.</li>
-            <li>Published work on multi‑task Ukrainian text‑editing models; released datasets and models.</li>
+    <!-- Experience (vertical timeline) -->
+    <section id="experience" class="mt-10">
+      <h2 class="text-2xl font-semibold tracking-tight">Experience</h2>
+      <div class="mt-5 space-y-10">
+        <!-- Apple -->
+        <article class="group">
+          <header class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
+            <div class="flex items-center gap-3">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple" class="h-6 w-6 rounded-md object-contain"/>
+              <h3 class="text-[17px] font-semibold tracking-tight">Apple — Machine Learning Engineer (MLE)</h3>
+            </div>
+            <div class="text-sm text-zinc-500">Apr 2025 – Present • Vancouver, BC, Canada</div>
+          </header>
+          <ul class="mt-3 ml-9 list-disc space-y-2 text-[15px] leading-relaxed text-zinc-800">
+            <li>Building cutting-edge Apple Intelligence features by training and optimizing GenAI models using advanced post-training methods such as DPO and Online Reinforcement Learning.</li>
+            <li>Designing Verifiable Rewards pipelines with Rubrics and Reward Models to improve alignment and model quality.</li>
+            <li>Developing scalable evaluation and training frameworks for high-quality generative AI experiences.</li>
           </ul>
+          <div class="mt-6 h-px w-full bg-zinc-300"></div>
+        </article>
+        </article>
+        <!-- Grammarly -->
+        <article class="group">
+          <header class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
+            <div class="flex items-center gap-3">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Grammarly_logo.png" alt="Grammarly" class="h-6 w-6 rounded-md object-contain"/>
+              <h3 class="text-[17px] font-semibold tracking-tight">Grammarly — Staff ML Engineer (L5)</h3>
+            </div>
+            <div class="text-sm text-zinc-500">Oct 2023 – Apr 2025 • Vancouver, BC, Canada</div>
+          </header>
+          <ul class="mt-3 ml-9 list-disc space-y-2 text-[15px] leading-relaxed text-zinc-800">
+            <li>Strategic Research org advancing LLM capabilities in the writing space; previously Core Product building Generative AI features.</li>
+            <li>Fine‑tuned LLMs (Llama, GPT) for fine‑grained writing assistance; instruction‑tuned Llama 3.1 (70B/8B) teacher models.</li>
+            <li>Built evaluation pipelines using LLM‑as‑a‑Judge; scaled synthetic data generation for internal LLMs.</li>
+            <li>Published multi‑task Ukrainian text‑editing work; released models/datasets on Hugging Face.</li>
+            <li>Created a Python library for automatic prompt optimization with target reward metrics (EMNLP 2023 style approach).</li>
+          </ul>
+          <div class="mt-6 h-px w-full bg-zinc-300"></div>
+        </article>
+
+        <!-- Twitter / X -->
+        <article class="group">
+          <header class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
+            <div class="flex items-center gap-3">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/X_logo_2023_original.svg" alt="Twitter" class="h-6 w-6 rounded-md object-contain"/>
+              <h3 class="text-[17px] font-semibold tracking-tight">Twitter, Inc. — Senior ML / NLP Engineer</h3>
+            </div>
+            <div class="text-sm text-zinc-500">May 2021 – Jan 2023 • Seattle, WA, USA</div>
+          </header>
+          <ul class="mt-3 ml-9 list-disc space-y-2 text-[15px] leading-relaxed text-zinc-800">
+            <li>NLP Signals (Cortex): end‑to‑end NLP models & signals used across Home Timeline, Notifications, and Trends.</li>
+            <li><span class="font-medium">Entity Linking:</span> Encoder‑only Transformers for detection, candidate generation, and ranking; dataset released at NeurIPS 2022; signals used in production.</li>
+            <li><span class="font-medium">NER:</span> Replaced Bi‑LSTM with multilingual BERT using subword masking, token features, weak labels, and distillation → <em>+13.5% F1</em>.</li>
+            <li><span class="font-medium">Tweet Representation:</span> Multi‑task model for language, topical, and engagement prediction; published in DL4SR 2022.</li>
+            <li>Improved notification seed Tweet quality; led NER adoption and ML code guidelines.</li>
+          </ul>
+          <div class="mt-6 h-px w-full bg-zinc-300"></div>
+        </article>
+
+        <!-- Microsoft (US) -->
+        <article class="group">
+          <header class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
+            <div class="flex items-center gap-3">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft" class="h-6 w-6 rounded-md object-contain"/>
+              <h3 class="text-[17px] font-semibold tracking-tight">Microsoft — Senior ML Engineer</h3>
+            </div>
+            <div class="text-sm text-zinc-500">Jan 2016 – Apr 2021 • Seattle, WA, USA</div>
+          </header>
+          <ul class="mt-3 ml-9 list-disc space-y-2 text-[15px] leading-relaxed text-zinc-800">
+            <li>Bing Ads (AI+Research): improved ad experience and launched new ad products to drive clicks.</li>
+            <li><span class="font-medium">Dynamic Search Ads:</span> Landing‑page extraction & Transformer‑based generation → <em>+1.5% RPM</em> (US daily), <em>2%+ RPM</em> international.</li>
+            <li><span class="font-medium">Web Page Similarity Graph:</span> TwinBERT/USE embeddings; scalable ANN (HNSW/NSG) for next‑link prediction.</li>
+            <li><span class="font-medium">Dynamic links with ads:</span> DeepXML categories + Ads RoBERTa scoring → <em>+1.5% CTR</em> (US).</li>
+            <li><span class="font-medium">Landing page summarization:</span> BERTSUM for extractive summaries used in ad title assets.</li>
+            <li><span class="font-medium">Ad Creative infrastructure:</span> Algorithms integration, editorial service, Azure, caching; latency tooling adopted across services.</li>
+          </ul>
+          <div class="mt-6 h-px w-full bg-zinc-300"></div>
+        </article>
+
+        <!-- Microsoft India -->
+        <article class="group">
+          <header class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
+            <div class="flex items-center gap-3">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft India" class="h-6 w-6 rounded-md object-contain"/>
+              <h3 class="text-[17px] font-semibold tracking-tight">Microsoft India — Software Engineer</h3>
+            </div>
+            <div class="text-sm text-zinc-500">Jul 2013 – Dec 2015 • Bangalore, India</div>
+          </header>
+          <ul class="mt-3 ml-9 list-disc space-y-2 text-[15px] leading-relaxed text-zinc-800">
+            <li>Rich Ads experience (RnR): online infra + rich ad experiences for non‑US markets.</li>
+            <li><span class="font-medium">Ads‑Composition:</span> Unified, parallelized pre‑serve pipeline for ads & decorations → lower latency, faster experimentation.</li>
+            <li><span class="font-medium">Related Product Annotation:</span> Surfaced relevant products for retail queries → higher clicks on text ads/product links.</li>
+            <li><span class="font-medium">Latency tooling:</span> Utilities to analyze critical latency paths, reused across services.</li>
+          </ul>
+        </article>
+
+        <!-- Internships -->
+        <div class="h-px w-full bg-zinc-300"></div>
+        <article class="group">
+          <header class="flex items-baseline justify-between">
+            <h3 class="text-[17px] font-semibold tracking-tight">Internships</h3>
+            <div class="text-sm text-zinc-500">2011 – 2013</div>
+          </header>
+          <div class="mt-3 space-y-4">
+            <div>
+              <div class="flex items-center gap-3">
+                <p class="font-medium text-[15px]">Amazon (Pricing) — Software Engineer Intern</p>
+              </div>
+              <p class="ml-8 text-sm text-zinc-500">Jan – Jun 2013</p>
+              <ul class="ml-12 mt-1 list-disc space-y-1 text-[15px] text-zinc-700">
+                <li>Pricing Attribute Prediction Service using SWF; built and deployed internal service.</li>
+              </ul>
+            </div>
+            <div class="h-px w-full bg-zinc-100"></div>
+            <div>
+              <div class="flex items-center gap-3">
+                <p class="font-medium text-[15px]">University of Victoria — Research Intern</p>
+              </div>
+              <p class="ml-8 text-sm text-zinc-500">May – Jul 2012</p>
+              <ul class="ml-12 mt-1 list-disc space-y-1 text-[15px] text-zinc-700">
+                <li>Language replacement project in a medical data device; prototyped and tested.</li>
+              </ul>
+            </div>
+            <div class="h-px w-full bg-zinc-100"></div>
+            <div>
+              <div class="flex items-center gap-3">
+                <p class="font-medium text-[15px]">IIRS, India — Research Intern</p>
+              </div>
+              <p class="ml-8 text-sm text-zinc-500">May – Jul 2011</p>
+              <ul class="ml-12 mt-1 list-disc space-y-1 text-[15px] text-zinc-700">
+                <li>WRF model deployment for weather research.</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Publications -->
+    <section id="publications" class="mt-12">
+      <h2 class="text-xl font-semibold">Publications & Releases</h2>
+      <div class="mt-4 space-y-5">
+        <!-- Spivavtor -->
+        <article class="rounded-xl border border-zinc-200 bg-white p-4 shadow-sm">
+          <h3 class="text-[16px] leading-snug">
+            <a class="text-blue-700 hover:underline font-medium" href="https://arxiv.org/abs/2404.18880" target="_blank" rel="noreferrer">
+              Spivavtor: An Instruction‑Tuned Ukrainian Text Editing Model
+            </a>
+          </h3>
+          <p class="mt-1 text-[15px] text-zinc-700">Aman Saini, Artem Chernodub, Vipul Raheja, Vivek Kulkarni</p>
+          <p class="text-sm text-zinc-500">UNLP Workshop, 2024</p>
+        </article>
+        <!-- TweetNERD -->
+        <article class="rounded-xl border border-zinc-200 bg-white p-4 shadow-sm">
+          <h3 class="text-[16px] leading-snug">
+            <a class="text-blue-700 hover:underline font-medium" href="https://arxiv.org/abs/2210.08129" target="_blank" rel="noreferrer">
+              TweetNERD — End‑to‑End Entity Linking Benchmark for Tweets
+            </a>
+          </h3>
+          <p class="mt-1 text-[15px] text-zinc-700">Shubhanshu Mishra, Aman Saini, Raheleh Makki, Sneha Mehta, Aria Haghighi, Ali Mollahosseini</p>
+          <p class="text-sm text-zinc-500">NeurIPS — Datasets & Benchmarks Track, 2022</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="mt-12">
+      <h2 class="text-2xl font-semibold tracking-tight">Education</h2>
+      <p class="mt-3 text-[15px] text-zinc-700 font-medium">Birla Institute of Technology and Science (BITS) Pilani</p>
+      <p class="text-[15px] text-zinc-600">B.E. in Computer Science • CGPA 9.54/10</p>
+      <p class="text-sm text-zinc-500">2009 – 2013</p>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="mt-12 mb-16">
+      <h2 class="text-xl font-semibold">Contact</h2>
+      <div class="mt-3 grid gap-4 sm:grid-cols-2">
+        <div>
+          <div class="text-zinc-500">Email</div>
+          <a class="text-blue-700 hover:underline" href="mailto:saini.aman.personal@gmail.com">saini.aman.personal@gmail.com</a>
         </div>
-      </section>
-
-      <!-- Past Experiences -->
-      <section id="experience" class="card">
-        <h2 class="text-lg font-semibold">Past Experiences</h2>
-        <div class="mt-3 grid gap-5 md:grid-cols-2">
-          <div>
-            <p class="font-medium">Twitter, Inc. — Senior ML / NLP Engineer • May 2021 – Jan 2023 (Seattle, WA)</p>
-            <ul class="ml-5 mt-2 list-disc space-y-1 text-sm text-zinc-300">
-              <li>Entity Linking system (encoder‑only models, candidate gen & ranking); released dataset (NeurIPS 2022).</li>
-              <li>Replaced Bi‑LSTM NER with multilingual BERT; +13.5% F1.</li>
-              <li>Multi‑task Tweet representation model; published in DL4SR 2022.</li>
-              <li>Improved notification relevance and led multiple ML infra initiatives.</li>
-            </ul>
-          </div>
-          <div>
-            <p class="font-medium">Microsoft — Senior ML Engineer • Jan 2016 – Apr 2021 (Seattle, WA)</p>
-            <ul class="ml-5 mt-2 list-disc space-y-1 text-sm text-zinc-300">
-              <li>Dynamic Search Ads: extraction & Transformer‑based generation; +1.5–2% RPM, multi‑market launch.</li>
-              <li>Web Page Similarity Graph with ANN (HNSW/NSG) and TwinBERT/USE embeddings.</li>
-              <li>Dynamic links with ads using DeepXML categories and Ads RoBERTa; +1.5% CTR.</li>
-              <li>Landing page summarization with BERTSUM; numerous infra and personalization projects.</li>
-            </ul>
-          </div>
-          <div>
-            <p class="font-medium">Microsoft India — Software Engineer • Jul 2013 – Dec 2015 (Bangalore, India)</p>
-            <ul class="ml-5 mt-2 list-disc space-y-1 text-sm text-zinc-300">
-              <li>Ads‑Composition pipeline to unify and parallelize ad/decorations processing; latency improvements.</li>
-              <li>Related Product Annotation for retail queries; boosted clicks.</li>
-              <li>Online infra improvements across critical latency paths.</li>
-            </ul>
-          </div>
-          <div>
-            <p class="font-medium">Internships</p>
-            <ul class="ml-5 mt-2 list-disc space-y-1 text-sm text-zinc-300">
-              <li>Amazon (Pricing) — Pricing Attribute Prediction Service using SWF (Jan–Jun 2013).</li>
-              <li>University of Victoria — Language replacement project in medical data device (May–Jul 2012).</li>
-              <li>IIRS, India — WRF model deployment for weather research (May–Jul 2011).</li>
-            </ul>
-          </div>
+        <div>
+          <div class="text-zinc-500">Location</div>
+          <div>Vancouver, BC, Canada</div>
         </div>
-      </section>
-
-      <!-- Publications -->
-      <section id="publications" class="card">
-        <h2 class="text-lg font-semibold">Publications & Releases</h2>
-        <div class="mt-3 grid gap-5 md:grid-cols-2">
-          <div>
-            <p class="font-medium">Spivavtor — Instruction‑Tuned Ukrainian Text Editing Model</p>
-            <ul class="ml-5 mt-2 list-disc space-y-1 text-sm text-zinc-300">
-              <li><a class="linkish" href="https://arxiv.org/abs/2404.18880" target="_blank" rel="noreferrer">arXiv:2404.18880</a></li>
-              <li><a class="linkish" href="https://huggingface.co/collections/grammarly/spivavtor-660744ab14fdf5e925592dc7" target="_blank" rel="noreferrer">Models & datasets (HF)</a></li>
-            </ul>
-          </div>
-          <div>
-            <p class="font-medium">TweetNERD — End‑to‑End Entity Linking Benchmark for Tweets</p>
-            <ul class="ml-5 mt-2 list-disc space-y-1 text-sm text-zinc-300">
-              <li><a class="linkish" href="https://arxiv.org/abs/2210.08129" target="_blank" rel="noreferrer">arXiv:2210.08129</a></li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <!-- Education -->
-      <section id="education" class="card">
-        <h2 class="text-lg font-semibold">Education</h2>
-        <p class="mt-2 text-zinc-300">B.E. in Computer Science, CGPA 9.54/10 — Birla Institute of Technology and Science (BITS Pilani), India.</p>
-        <p class="text-sm text-zinc-500">Class 12th (CBSE) 94.6% • Class 10th 95.2%.</p>
-      </section>
-
-      <!-- Contact -->
-      <section id="contact" class="card">
-        <h2 class="text-lg font-semibold">Contact</h2>
-        <div class="mt-3 grid gap-4 sm:grid-cols-2">
-          <div>
-            <div class="text-zinc-400">Email</div>
-            <a class="linkish" href="mailto:saini.aman.personal@gmail.com">saini.aman.personal@gmail.com</a>
-          </div>
-          <div>
-            <div class="text-zinc-400">Location</div>
-            <div>Vancouver, BC, Canada</div>
-          </div>
-        </div>
-      </section>
-
-      <footer class="py-4 text-center text-xs text-zinc-500">© <span id="y"></span> Aman Saini</footer>
+      </div>
+      <footer class="mt-10 border-t border-zinc-200 py-6 text-center text-xs text-zinc-500">© <span id="y"></span> Aman Saini</footer>
     </section>
   </main>
 
