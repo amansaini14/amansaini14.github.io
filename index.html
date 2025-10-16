@@ -12,14 +12,15 @@
   <style>
     html { scroll-behavior: smooth; }
     body { font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; }
+    a:hover { text-decoration: underline; }
     .card { border-radius: 1rem; border: 1px solid rgb(228 228 231); background: white; padding: 1.25rem; box-shadow: 0 1px 2px rgba(0,0,0,0.04); }
     .divider { height:1px; width:100%; background: rgb(212 212 216); }
-    a:hover { text-decoration: underline; }
-    .logo { height: 1.5rem; width: 1.5rem; object-fit: contain; border-radius: .25rem; }
+    .logo { height: 28px; width: auto; object-fit: contain; vertical-align: middle; border-radius: .25rem; }
     .co { font-size: 17px; font-weight: 600; letter-spacing: -0.01em; }
   </style>
 </head>
 <body class="bg-white text-zinc-900">
+  <!-- Top Nav -->
   <header class="sticky top-0 z-50 border-b border-zinc-200 bg-white/80 backdrop-blur supports-[backdrop-filter]:bg-white/70">
     <div class="mx-auto flex max-w-3xl items-center justify-between px-5 py-4">
       <a href="#top" class="text-[15px] font-semibold tracking-tight">Aman Saini</a>
@@ -34,9 +35,10 @@
   </header>
 
   <main id="top" class="mx-auto max-w-3xl px-5">
+    <!-- Hero -->
     <section class="pt-10 sm:pt-14">
       <div class="flex items-start gap-5">
-        <img class="h-20 w-20 rounded-2xl object-cover ring-2 ring-blue-200" src="https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?q=80&w=256&auto=format&fit=crop" alt="Aman headshot"/>
+        <img class="h-20 w-20 rounded-2xl object-cover ring-2 ring-blue-200" src="./assets/ProfilePhoto.jpg" alt="Aman headshot"/>
         <div>
           <h1 class="text-2xl font-semibold leading-snug">Machine Learning Engineer</h1>
           <p class="mt-1 text-[15px] text-zinc-600">I build, evaluate, and productionize NLP/LLM systems — instruction-/task-tuned models, rubric/eval tooling, entity linking & NER, and generative features at scale.</p>
@@ -53,10 +55,12 @@
       </div>
     </section>
 
+    <!-- Experience -->
     <section id="experience" class="mt-10">
       <h2 class="text-2xl font-semibold tracking-tight">Experience</h2>
       <div class="mt-5 space-y-10">
 
+        <!-- Apple -->
         <article class="group">
           <header class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
             <div class="flex items-center gap-3">
@@ -73,11 +77,11 @@
           <div class="mt-6 divider"></div>
         </article>
 
+        <!-- Grammarly (LOCAL LOGO) -->
         <article class="group">
           <header class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
             <div class="flex items-center gap-3">
-              <!-- Local Grammarly logo: put PNG at ./assets/grammarly.png -->
-              <img src="./assets/grammarly.png" alt="Grammarly" class="logo" />
+              <img src="./assets/grammarly.png" alt="Grammarly" class="logo"/>
               <h3 class="co">Grammarly — Staff ML Engineer</h3>
             </div>
             <div class="text-sm text-zinc-500">Oct 2023 – Apr 2025 • Vancouver, BC, Canada</div>
@@ -92,6 +96,7 @@
           <div class="mt-6 divider"></div>
         </article>
 
+        <!-- Twitter / X -->
         <article class="group">
           <header class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
             <div class="flex items-center gap-3">
@@ -110,6 +115,7 @@
           <div class="mt-6 divider"></div>
         </article>
 
+        <!-- Microsoft (US) -->
         <article class="group">
           <header class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
             <div class="flex items-center gap-3">
@@ -129,6 +135,7 @@
           <div class="mt-6 divider"></div>
         </article>
 
+        <!-- Microsoft India -->
         <article class="group">
           <header class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
             <div class="flex items-center gap-3">
@@ -145,6 +152,7 @@
           </ul>
         </article>
 
+        <!-- Internships -->
         <div class="mt-10 divider"></div>
         <article class="group">
           <header class="flex items-baseline justify-between">
@@ -181,39 +189,42 @@
             </div>
           </div>
         </article>
+
       </div>
     </section>
 
+    <!-- Publications (static, full abstracts visible) -->
     <section id="publications" class="mt-12">
-
       <h2 class="text-2xl font-semibold tracking-tight">Publications</h2>
       <div class="mt-4 space-y-5">
         <!-- Spivavtor -->
         <article class="card">
           <h3 class="text-[16px] leading-snug">
             <a class="text-blue-700 hover:underline font-medium" href="https://arxiv.org/abs/2404.18880" target="_blank" rel="noreferrer">
-              Spivavtor: An Instruction Tuned Ukrainian Text Editing Model
+              Spivavtor: An Instruction-Tuned Ukrainian Text Editing Model
             </a>
           </h3>
           <p class="mt-1 text-[15px] text-zinc-700">Aman Saini, Artem Chernodub, Vipul Raheja, Vivek Kulkarni</p>
           <p class="text-sm text-zinc-500">arXiv 2024</p>
           <div class="mt-2 whitespace-pre-wrap text-[15px] leading-relaxed text-zinc-800">
-We introduce Spivavtor, a dataset and instruction‑tuned models for text editing focused on the Ukrainian language. Spivavtor is a Ukrainian‑focused adaptation of the English‑only CoEdIT model, performing text editing by following natural‑language instructions. We describe the Spivavtor‑Instruct dataset, models, and evaluation results.
+We introduce Spivavtor, a Ukrainian-focused instruction-tuned text-editing model and dataset. Spivavtor adapts the CoEdIT framework to Ukrainian and provides models and data for instruction-based text rewriting/editing. We describe the dataset construction, model training, and evaluation results.
           </div>
         </article>
+
         <!-- TweetNERD -->
         <article class="card">
           <h3 class="text-[16px] leading-snug">
             <a class="text-blue-700 hover:underline font-medium" href="https://arxiv.org/abs/2210.08129" target="_blank" rel="noreferrer">
-              TweetNERD — End‑to‑End Entity Linking Benchmark for Tweets
+              TweetNERD — End-to-End Entity Linking Benchmark for Tweets
             </a>
           </h3>
           <p class="mt-1 text-[15px] text-zinc-700">Shubhanshu Mishra, Aman Saini, Raheleh Makki, Sneha Mehta, Aria Haghighi, Ali Mollahosseini</p>
-          <p class="text-sm text-zinc-500">NeurIPS Datasets & Benchmarks 2022</p>
+          <p class="text-sm text-zinc-500">NeurIPS — Datasets & Benchmarks Track, 2022</p>
           <div class="mt-2 whitespace-pre-wrap text-[15px] leading-relaxed text-zinc-800">
-We introduce TweetNERD, a benchmark of 340K+ Tweets (2010–2021) for evaluating Named Entity Recognition and Disambiguation (NERD) systems on social media. We define three tasks—NER, Entity Linking with true spans, and End‑to‑End Entity Linking—and report results for strong baselines across in‑domain and out‑of‑distribution splits. Dataset and code: GitHub / Zenodo.
+We present TweetNERD, a large-scale benchmark for entity extraction and linking on Twitter. The dataset spans 2010–2021 with three tasks: NER, Entity Linking with gold spans, and End-to-End Entity Linking. We provide strong baselines and analyze in-domain and out-of-domain performance.
           </div>
         </article>
+
         <!-- APIO -->
         <article class="card">
           <h3 class="text-[16px] leading-snug">
@@ -224,13 +235,13 @@ We introduce TweetNERD, a benchmark of 340K+ Tweets (2010–2021) for evaluating
           <p class="mt-1 text-[15px] text-zinc-700">Artem Chernodub, Aman Saini, Yejin Huh, Vivek Kulkarni, Vipul Raheja</p>
           <p class="text-sm text-zinc-500">arXiv 2025</p>
           <div class="mt-2 whitespace-pre-wrap text-[15px] leading-relaxed text-zinc-800">
-We present APIO, a two‑stage method for Automatic Prompt Induction followed by Prompt Optimization for text editing tasks. For Text Simplification, APIO attains a SARI of 49.47 on ASSET‑Test, surpassing the prior state of the art. We detail the induction procedure from example pairs, the optimization loop, and extensive evaluations.
+We propose APIO, a two-stage approach that first induces task-specific prompts from examples and then optimizes them for text editing tasks. On Text Simplification, APIO attains strong SARI scores on ASSET-Test. We outline the induction/optimization pipeline and report evaluations across simplification and grammatical error correction.
           </div>
         </article>
       </div>
-    
     </section>
 
+    <!-- Education -->
     <section id="education" class="mt-12">
       <h2 class="text-2xl font-semibold tracking-tight">Education</h2>
       <p class="mt-3 text-[15px] text-zinc-700 font-medium">Birla Institute of Technology and Science (BITS) Pilani</p>
@@ -238,6 +249,7 @@ We present APIO, a two‑stage method for Automatic Prompt Induction followed by
       <p class="text-sm text-zinc-500">2009 – 2013</p>
     </section>
 
+    <!-- Contact -->
     <section id="contact" class="mt-12 mb-16">
       <h2 class="text-2xl font-semibold tracking-tight">Contact</h2>
       <div class="mt-3 grid gap-4 sm:grid-cols-2">
@@ -256,66 +268,6 @@ We present APIO, a two‑stage method for Automatic Prompt Induction followed by
 
   <script>
     document.getElementById('y').textContent = new Date().getFullYear();
-
-    // Publications — load from arXiv API (full abstracts)
-    const ARXIV_IDS = ["2404.18880", "2210.08129", "2508.09378"];
-
-    async function fetchArxivEntry(id) {
-      const url = `https://export.arxiv.org/api/query?id_list=${id}`;
-      const res = await fetch(url);
-      const text = await res.text();
-      const parser = new DOMParser();
-      const xml = parser.parseFromString(text, "application/xml");
-      const entry = xml.querySelector("entry");
-      if (!entry) throw new Error("No entry for " + id);
-      const title = (entry.querySelector("title")?.textContent || "").trim().replace(/\s+/g, " ");
-      const abstract = (entry.querySelector("summary")?.textContent || "").trim().replace(/\s+/g, " ");
-      const link = (entry.querySelector("id")?.textContent || `https://arxiv.org/abs/${id}`).trim();
-      const authors = Array.from(entry.querySelectorAll("author > name")).map(n => n.textContent.trim());
-      const published = entry.querySelector("published")?.textContent || "";
-      const year = published ? new Date(published).getFullYear() : "";
-      return { id, title, abstract, link, authors, year };
-    }
-
-    function renderPublication({title, authors, abstract, link, year}) {
-      const authorsLine = authors.join(", ");
-      const el = document.createElement("article");
-      el.className = "card";
-      el.innerHTML = `
-        <h3 class="text-[16px] leading-snug">
-          <a class="text-blue-700 hover:underline font-medium" href="${link}" target="_blank" rel="noreferrer">
-            ${title}
-          </a>
-        </h3>
-        <p class="mt-1 text-[15px] text-zinc-700">${authorsLine}</p>
-        <p class="text-sm text-zinc-500">arXiv ${year}</p>
-        <div class="mt-2 whitespace-pre-wrap text-[15px] leading-relaxed text-zinc-800">${abstract}</div>
-      `;
-      return el;
-    }
-
-    (async () => {
-      const container = document.getElementById("pubs");
-      for (const id of ARXIV_IDS) {
-        const placeholder = document.createElement("article");
-        placeholder.className = "card";
-        placeholder.innerHTML = `
-          <h3 class="text-[16px] leading-snug"><a class="text-blue-700 font-medium" href="https://arxiv.org/abs/${id}" target="_blank" rel="noreferrer">Loading… (arXiv ${id})</a></h3>
-          <p class="mt-1 text-[15px] text-zinc-700">Loading authors…</p>
-          <p class="text-sm text-zinc-500">Loading year…</p>
-          <div class="mt-2 text-[15px] text-zinc-500">Loading abstract…</div>
-        `;
-        container.appendChild(placeholder);
-        try {
-          const data = await fetchArxivEntry(id);
-          const node = renderPublication(data);
-          container.replaceChild(node, placeholder);
-        } catch (e) {
-          placeholder.querySelector("div").textContent = "Abstract unavailable right now. Open the arXiv link above.";
-          console.error(e);
-        }
-      }
-    })();
   </script>
 </body>
 </html>
