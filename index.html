@@ -4,22 +4,20 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Aman Saini — ML Engineer</title>
-  <meta name="description" content="Aman Saini — Machine Learning Engineer. Resume-based personal site." />
+  <meta name="description" content="Aman Saini — Machine Learning Engineer. Resume‑based personal site." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Tailwind via CDN (no build step) -->
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     html { scroll-behavior: smooth; }
     body { font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; }
-    .btn { @apply inline-flex items-center rounded-lg border px-3 py-1.5 text-sm font-medium; }
-    .card { @apply rounded-2xl border border-zinc-200 bg-white p-5 shadow-sm; }
-    .divider { @apply h-px w-full bg-zinc-300; }
-    a:hover { text-decoration: underline; }
   </style>
 </head>
-<body class="bg-white text-zinc-900">
-  <header class="sticky top-0 z-50 border-b border-zinc-200 bg-white/80 backdrop-blur supports-[backdrop-filter]:bg-white/70">
+<body class="bg-white text-zinc-800">
+  <!-- Header / Hero -->
+  <header class="border-b border-zinc-200 bg-white/80 backdrop-blur supports-[backdrop-filter]:bg-white/70 sticky top-0 z-50">
     <div class="mx-auto flex max-w-3xl items-center justify-between px-5 py-4">
       <a href="#top" class="text-[15px] font-semibold tracking-tight">Aman Saini</a>
       <nav class="hidden gap-6 text-sm sm:flex">
@@ -27,15 +25,17 @@
         <a href="#publications" class="hover:text-blue-600">Publications</a>
         <a href="#education" class="hover:text-blue-600">Education</a>
         <a href="#contact" class="hover:text-blue-600">Contact</a>
-        <a href="Aman_Saini_Resume.pdf" class="inline-flex items-center rounded-lg border border-blue-300 px-3 py-1.5 text-sm font-medium text-blue-700 hover:bg-blue-50">Resume</a>
+        <a href="Aman_Saini_Resume.pdf" class="rounded-lg border border-blue-300 px-3 py-1.5 font-medium text-blue-700 hover:bg-blue-50">Resume</a>
       </nav>
     </div>
   </header>
 
   <main id="top" class="mx-auto max-w-3xl px-5">
+    <!-- Top card -->
     <section class="pt-10 sm:pt-14">
       <div class="flex items-start gap-5">
-        <img class="h-20 w-20 rounded-2xl object-cover ring-2 ring-blue-200" src="https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?q=80&w=256&auto=format&fit=crop" alt="Aman headshot"/>
+        <!-- Photo: replace src with your headshot path (e.g., ./headshot.jpg) -->
+        <img class="h-20 w-20 rounded-2xl object-cover ring-2 ring-blue-200" src="./assets/ProfilePhoto.jpg" alt="Aman headshot"/>
         <div>
           <h1 class="text-2xl font-semibold leading-snug">Machine Learning Engineer</h1>
           <p class="mt-1 text-[15px] text-zinc-600">I build, evaluate, and productionize NLP/LLM systems — instruction-/task‑tuned models, rubric/eval tooling, entity linking & NER, and generative features at scale.</p>
@@ -52,9 +52,11 @@
       </div>
     </section>
 
+    <!-- Experience (vertical timeline) -->
     <section id="experience" class="mt-10">
       <h2 class="text-2xl font-semibold tracking-tight">Experience</h2>
       <div class="mt-5 space-y-10">
+        <!-- Apple -->
         <article class="group">
           <header class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
             <div class="flex items-center gap-3">
@@ -70,11 +72,12 @@
           </ul>
           <div class="mt-6 h-px w-full bg-zinc-300"></div>
         </article>
-
+        </article>
+        <!-- Grammarly -->
         <article class="group">
           <header class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
             <div class="flex items-center gap-3">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Grammarly_logo.png/256px-Grammarly_logo.png" alt="Grammarly" class="h-6 w-6 rounded-md object-contain bg-white"/>
+              <img src="./assets/grammarly.png" alt="Grammarly" class="logo"/>
               <h3 class="text-[17px] font-semibold tracking-tight">Grammarly — Staff ML Engineer</h3>
             </div>
             <div class="text-sm text-zinc-500">Oct 2023 – Apr 2025 • Vancouver, BC, Canada</div>
@@ -89,10 +92,11 @@
           <div class="mt-6 h-px w-full bg-zinc-300"></div>
         </article>
 
+        <!-- Twitter / X -->
         <article class="group">
           <header class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
             <div class="flex items-center gap-3">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/X_logo_2023_original.svg" alt="Twitter/X" class="h-6 w-6 rounded-md object-contain"/>
+              <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/X_logo_2023_original.svg" alt="Twitter" class="h-6 w-6 rounded-md object-contain"/>
               <h3 class="text-[17px] font-semibold tracking-tight">Twitter, Inc. — Senior ML / NLP Engineer</h3>
             </div>
             <div class="text-sm text-zinc-500">May 2021 – Jan 2023 • Seattle, WA, USA</div>
@@ -107,6 +111,7 @@
           <div class="mt-6 h-px w-full bg-zinc-300"></div>
         </article>
 
+        <!-- Microsoft (US) -->
         <article class="group">
           <header class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
             <div class="flex items-center gap-3">
@@ -126,6 +131,7 @@
           <div class="mt-6 h-px w-full bg-zinc-300"></div>
         </article>
 
+        <!-- Microsoft India -->
         <article class="group">
           <header class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
             <div class="flex items-center gap-3">
@@ -142,14 +148,16 @@
           </ul>
         </article>
 
-        <div class="mt-10 h-px w-full bg-zinc-300"></div>
+        <!-- Internships -->
+        <div class="h-px w-full bg-zinc-300"></div>
         <article class="group">
           <header class="flex items-baseline justify-between">
             <h3 class="text-[17px] font-semibold tracking-tight">Internships</h3>
             <div class="text-sm text-zinc-500">2011 – 2013</div>
           </header>
           <div class="mt-4 space-y-5">
-            <div class="rounded-2xl border border-zinc-200 bg-white p-4 shadow-sm">
+            <!-- Amazon -->
+            <div class="rounded-lg border border-zinc-200 bg-white p-4 shadow-sm">
               <div class="flex items-baseline justify-between">
                 <p class="font-medium text-[15px]">Amazon (Pricing) — Software Engineer Intern</p>
                 <p class="text-sm text-zinc-500">Jan – Jun 2013</p>
@@ -158,7 +166,8 @@
                 <li>Pricing Attribute Prediction Service using SWF; built and deployed internal service.</li>
               </ul>
             </div>
-            <div class="rounded-2xl border border-zinc-200 bg-white p-4 shadow-sm">
+            <!-- UVic -->
+            <div class="rounded-lg border border-zinc-200 bg-white p-4 shadow-sm">
               <div class="flex items-baseline justify-between">
                 <p class="font-medium text-[15px]">University of Victoria — Research Intern</p>
                 <p class="text-sm text-zinc-500">May – Jul 2012</p>
@@ -167,7 +176,8 @@
                 <li>Language replacement project in a medical data device; prototyped and tested.</li>
               </ul>
             </div>
-            <div class="rounded-2xl border border-zinc-200 bg-white p-4 shadow-sm">
+            <!-- IIRS -->
+            <div class="rounded-lg border border-zinc-200 bg-white p-4 shadow-sm">
               <div class="flex items-baseline justify-between">
                 <p class="font-medium text-[15px]">IIRS, India — Research Intern</p>
                 <p class="text-sm text-zinc-500">May – Jul 2011</p>
@@ -181,11 +191,34 @@
       </div>
     </section>
 
+    <!-- Publications -->
     <section id="publications" class="mt-12">
-      <h2 class="text-2xl font-semibold tracking-tight">Publications</h2>
-      <div class="mt-4 space-y-5" id="pubs"></div>
+      <h2 class="text-xl font-semibold">Publications & Releases</h2>
+      <div class="mt-4 space-y-5">
+        <!-- Spivavtor -->
+        <article class="rounded-xl border border-zinc-200 bg-white p-4 shadow-sm">
+          <h3 class="text-[16px] leading-snug">
+            <a class="text-blue-700 hover:underline font-medium" href="https://arxiv.org/abs/2404.18880" target="_blank" rel="noreferrer">
+              Spivavtor: An Instruction‑Tuned Ukrainian Text Editing Model
+            </a>
+          </h3>
+          <p class="mt-1 text-[15px] text-zinc-700">Aman Saini, Artem Chernodub, Vipul Raheja, Vivek Kulkarni</p>
+          <p class="text-sm text-zinc-500">UNLP Workshop, 2024</p>
+        </article>
+        <!-- TweetNERD -->
+        <article class="rounded-xl border border-zinc-200 bg-white p-4 shadow-sm">
+          <h3 class="text-[16px] leading-snug">
+            <a class="text-blue-700 hover:underline font-medium" href="https://arxiv.org/abs/2210.08129" target="_blank" rel="noreferrer">
+              TweetNERD — End‑to‑End Entity Linking Benchmark for Tweets
+            </a>
+          </h3>
+          <p class="mt-1 text-[15px] text-zinc-700">Shubhanshu Mishra, Aman Saini, Raheleh Makki, Sneha Mehta, Aria Haghighi, Ali Mollahosseini</p>
+          <p class="text-sm text-zinc-500">NeurIPS — Datasets & Benchmarks Track, 2022</p>
+        </article>
+      </div>
     </section>
 
+    <!-- Education -->
     <section id="education" class="mt-12">
       <h2 class="text-2xl font-semibold tracking-tight">Education</h2>
       <p class="mt-3 text-[15px] text-zinc-700 font-medium">Birla Institute of Technology and Science (BITS) Pilani</p>
@@ -193,8 +226,9 @@
       <p class="text-sm text-zinc-500">2009 – 2013</p>
     </section>
 
+    <!-- Contact -->
     <section id="contact" class="mt-12 mb-16">
-      <h2 class="text-2xl font-semibold tracking-tight">Contact</h2>
+      <h2 class="text-xl font-semibold">Contact</h2>
       <div class="mt-3 grid gap-4 sm:grid-cols-2">
         <div>
           <div class="text-zinc-500">Email</div>
@@ -211,66 +245,6 @@
 
   <script>
     document.getElementById('y').textContent = new Date().getFullYear();
-
-    // Publications — load from arXiv API (full abstract visible)
-    const ARXIV_IDS = ["2404.18880", "2210.08129", "2508.09378"];
-
-    async function fetchArxivEntry(id) {
-      const url = `https://export.arxiv.org/api/query?id_list=${id}`;
-      const res = await fetch(url);
-      const text = await res.text();
-      const parser = new DOMParser();
-      const xml = parser.parseFromString(text, "application/xml");
-      const entry = xml.querySelector("entry");
-      if (!entry) throw new Error("No entry for " + id);
-      const title = (entry.querySelector("title")?.textContent || "").trim().replace(/\\s+/g, " ");
-      const abstract = (entry.querySelector("summary")?.textContent || "").trim().replace(/\\s+/g, " ");
-      const link = (entry.querySelector("id")?.textContent || `https://arxiv.org/abs/${id}`).trim();
-      const authors = Array.from(entry.querySelectorAll("author > name")).map(n => n.textContent.trim());
-      const published = entry.querySelector("published")?.textContent || "";
-      const year = published ? new Date(published).getFullYear() : "";
-      return { id, title, abstract, link, authors, year };
-    }
-
-    function renderPublication({title, authors, abstract, link, year}) {
-      const authorsLine = authors.join(", ");
-      const el = document.createElement("article");
-      el.className = "rounded-2xl border border-zinc-200 bg-white p-5 shadow-sm";
-      el.innerHTML = `
-        <h3 class="text-[16px] leading-snug">
-          <a class="text-blue-700 hover:underline font-medium" href="${link}" target="_blank" rel="noreferrer">
-            ${title}
-          </a>
-        </h3>
-        <p class="mt-1 text-[15px] text-zinc-700">${authorsLine}</p>
-        <p class="text-sm text-zinc-500">arXiv ${year}</p>
-        <div class="mt-2 whitespace-pre-wrap text-[15px] leading-relaxed text-zinc-800">${abstract}</div>
-      `;
-      return el;
-    }
-
-    (async () => {
-      const container = document.getElementById("pubs");
-      for (const id of ARXIV_IDS) {
-        const placeholder = document.createElement("article");
-        placeholder.className = "rounded-2xl border border-zinc-200 bg-white p-5 shadow-sm";
-        placeholder.innerHTML = `
-          <h3 class="text-[16px] leading-snug"><a class="text-blue-700 font-medium" href="https://arxiv.org/abs/${id}" target="_blank" rel="noreferrer">Loading… (arXiv ${id})</a></h3>
-          <p class="mt-1 text-[15px] text-zinc-700">Loading authors…</p>
-          <p class="text-sm text-zinc-500">Loading year…</p>
-          <div class="mt-2 text-[15px] text-zinc-500">Loading abstract…</div>
-        `;
-        container.appendChild(placeholder);
-        try {
-          const data = await fetchArxivEntry(id);
-          const node = renderPublication(data);
-          container.replaceChild(node, placeholder);
-        } catch (e) {
-          placeholder.querySelector("div").textContent = "Abstract unavailable right now. Open the arXiv link above.";
-          console.error(e);
-        }
-      }
-    })();
   </script>
 </body>
 </html>
