@@ -38,7 +38,7 @@
     <!-- Hero -->
     <section class="pt-10 sm:pt-14">
       <div class="flex items-start gap-5">
-        <img id="headshot" class="h-20 w-20 rounded-2xl object-cover ring-2 ring-blue-200" src="./assets/ProfilePhoto.jpg" alt="Aman headshot"/>
+        <img id="headshot" class="h-28 w-28 rounded-2xl object-cover ring-2 ring-blue-200" src="./assets/ProfilePhoto.jpg" alt="Aman headshot"/>
         <div>
           <h1 class="text-2xl font-semibold leading-snug">Machine Learning Engineer</h1>
           <p class="mt-1 text-[15px] text-zinc-600">Seasoned ML Engineer specializing in LLM post-training, fine-tuning, retrieval, LLM evaluation, Deep Learning, Natural Language Generation, Natural Language Understanding</p>
@@ -51,8 +51,7 @@
       <span class="text-zinc-300">|</span>
       <span class="text-zinc-600">Vancouver, BC, Canada</span>
     </div>
-    <a class="inline-flex items-center rounded-full border border-zinc-300 px-3 py-1.5 text-zinc-700 hover:bg-zinc-50" href="https://www.linkedin.com/in/amansaini14/" target="_blank" rel="noreferrer">LinkedIn</a>
-  </div>
+    <div class="flex items-center gap-2"><a class="inline-flex items-center rounded-full border border-zinc-300 px-3 py-1.5 text-zinc-700 hover:bg-zinc-50" href="https://www.linkedin.com/in/amansaini14/" target="_blank" rel="noreferrer">LinkedIn</a><a class="inline-flex items-center rounded-full border border-zinc-300 px-3 py-1.5 text-zinc-700 hover:bg-zinc-50" href="https://scholar.google.com/citations?user=jioPHNoAAAAJ&hl=en" target="_blank" rel="noreferrer">Google Scholar</a></div></div>
 </div>
 </div>
 </section>
@@ -154,48 +153,10 @@
           </ul>
         </article>
 
-        <!-- Internships -->
-        <div class="mt-10 divider"></div>
-        <article class="group">
-          <header class="flex items-baseline justify-between">
-            <h3 class="co">Internships</h3>
-            <div class="text-sm text-zinc-500">2011 – 2013</div>
-          </header>
-          <div class="mt-4 space-y-5">
-            <div class="card">
-              <div class="flex items-baseline justify-between">
-                <p class="font-medium text-[15px]">Amazon (Pricing) — Software Engineer Intern</p>
-                <p class="text-sm text-zinc-500">Jan – Jun 2013</p>
-              </div>
-              <ul class="mt-2 ml-5 list-disc text-[15px] leading-relaxed text-zinc-800">
-                <li>Pricing Attribute Prediction Service using SWF; built and deployed internal service.</li>
-              </ul>
-            </div>
-            <div class="card">
-              <div class="flex items-baseline justify-between">
-                <p class="font-medium text-[15px]">University of Victoria — Research Intern</p>
-                <p class="text-sm text-zinc-500">May – Jul 2012</p>
-              </div>
-              <ul class="mt-2 ml-5 list-disc text-[15px] leading-relaxed text-zinc-800">
-                <li>Language replacement project in a medical data device; prototyped and tested.</li>
-              </ul>
-            </div>
-            <div class="card">
-              <div class="flex items-baseline justify-between">
-                <p class="font-medium text-[15px]">IIRS, India — Research Intern</p>
-                <p class="text-sm text-zinc-500">May – Jul 2011</p>
-              </div>
-              <ul class="mt-2 ml-5 list-disc text-[15px] leading-relaxed text-zinc-800">
-                <li>WRF model deployment for weather research.</li>
-              </ul>
-            </div>
-          </div>
-        </article>
-
       </div>
     </section>
 
-    <!-- Publications (static, full abstracts visible) -->
+    <!-- Publications (moved ABOVE internships) -->
     <section id="publications" class="mt-12">
       <h2 class="text-2xl font-semibold tracking-tight">Publications</h2>
       <div class="mt-4 space-y-5">
@@ -243,10 +204,56 @@ We propose APIO, a two-stage approach that first induces task-specific prompts f
       </div>
     </section>
 
+    <!-- Internships (NO boxes) -->
+    <section id="internships" class="mt-12">
+      <div class="divider"></div>
+      <article class="group">
+        <header class="flex items-baseline justify-between mt-8">
+          <h3 class="co">Internships</h3>
+          <div class="text-sm text-zinc-500">2011 – 2013</div>
+        </header>
+        <div class="mt-4 space-y-5">
+          <div>
+            <div class="flex items-baseline justify-between">
+              <p class="font-medium text-[15px]">Amazon (Pricing) — Software Engineer Intern</p>
+              <p class="text-sm text-zinc-500">Jan – Jun 2013</p>
+            </div>
+            <ul class="mt-2 ml-5 list-disc text-[15px] leading-relaxed text-zinc-800">
+              <li>Pricing Attribute Prediction Service using SWF; built and deployed internal service.</li>
+            </ul>
+          </div>
+          <div class="divider"></div>
+          <div>
+            <div class="flex items-baseline justify-between">
+              <p class="font-medium text-[15px]">University of Victoria — Research Intern</p>
+              <p class="text-sm text-zinc-500">May – Jul 2012</p>
+            </div>
+            <ul class="mt-2 ml-5 list-disc text-[15px] leading-relaxed text-zinc-800">
+              <li>Language replacement project in a medical data device; prototyped and tested.</li>
+            </ul>
+          </div>
+          <div class="divider"></div>
+          <div>
+            <div class="flex items-baseline justify-between">
+              <p class="font-medium text-[15px]">IIRS, India — Research Intern</p>
+              <p class="text-sm text-zinc-500">May – Jul 2011</p>
+            </div>
+            <ul class="mt-2 ml-5 list-disc text-[15px] leading-relaxed text-zinc-800">
+              <li>WRF model deployment for weather research.</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+    </section>
+
     <!-- Education -->
     <section id="education" class="mt-12">
       <h2 class="text-2xl font-semibold tracking-tight">Education</h2>
-      <p class="mt-3 text-[15px] text-zinc-700 font-medium">Birla Institute of Technology and Science (BITS) Pilani</p>
+      <p class="mt-3 text-[15px] text-zinc-700 font-medium">
+        <a class="hover:underline text-zinc-900" href="https://www.bits-pilani.ac.in/pilani/" target="_blank" rel="noreferrer">
+          Birla Institute of Technology and Science (BITS) Pilani
+        </a>
+      </p>
       <p class="text-[15px] text-zinc-600">B.E. in Computer Science • CGPA 9.54/10</p>
       <p class="text-sm text-zinc-500">2009 – 2013</p>
     </section>
