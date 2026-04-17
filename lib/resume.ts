@@ -55,8 +55,9 @@ export const ROLES: Role[] = [
     logo: LOGOS.apple,
     logoAlt: "Apple",
     bullets: [
-      "Building Apple Intelligence features by training and optimizing GenAI models using advanced post-training methods such as DPO and online reinforcement learning.",
-      "Designing verifiable-rewards pipelines with rubrics and reward models to improve alignment and model quality.",
+      "Building World-Class Question Answering for Siri.",
+      "Training and optimizing GenAI models using advanced post-training methods (DPO, Online RL).",
+      "Designing verifiable reward pipelines with rubrics and improving LLM alignment using better Reward Models.",
       "Developing scalable evaluation and training frameworks for high-quality generative AI experiences.",
     ],
   },
