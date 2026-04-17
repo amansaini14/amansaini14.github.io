@@ -69,7 +69,6 @@ export const ROLES: Role[] = [
     logo: LOGOS.grammarly,
     logoAlt: "Grammarly",
     bullets: [
-      "Strategic Research org advancing LLM capabilities in the writing space; previously Core Product building generative AI features.",
       "Fine-tuned LLMs (Llama, GPT) for fine-grained writing assistance; instruction-tuned Llama 3.1 70B/8B teacher models.",
       "Built evaluation pipelines using LLM-as-a-Judge; scaled synthetic data generation for internal LLMs.",
       "Published multi-task Ukrainian text-editing work; released models and datasets on Hugging Face.",
@@ -84,10 +83,10 @@ export const ROLES: Role[] = [
     logo: LOGOS.x,
     logoAlt: "Twitter / X",
     bullets: [
-      "NLP Signals (Cortex): end-to-end NLP models and signals used across Home Timeline, Notifications, and Trends.",
-      "Entity Linking: encoder-only Transformers for detection, candidate generation, and ranking; dataset released at NeurIPS 2022 — signals shipped in production.",
-      "NER: replaced Bi-LSTM with multilingual BERT using subword masking, token features, weak labels, and distillation — +13.5% F1.",
-      "Tweet Representation: multi-task model for language, topical, and engagement prediction; published in DL4SR 2022.",
+      "NLP Signals (Cortex): End-to-End NLP models and signals used across Home Timeline, Notifications, and Trends.",
+      "Entity Linking: Built Encoder-only Transformer models for detection, candidate generation and ranking to identify and link Named Entities with Tweets. Dataset released at NeurIPS 2022.",
+      "NER: Replaced Bi-LSTM with multilingual BERT using subword masking, token features, weak labels, and distillation, resulting in a 13.5% lift in offline F1 score.",
+      "Tweet Representation: Multi-task model for language, topical, and engagement prediction; published in DL4SR 2022.",
       "Improved notification seed-Tweet quality; led NER adoption and ML code guidelines.",
     ],
   },
@@ -99,8 +98,8 @@ export const ROLES: Role[] = [
     logo: LOGOS.microsoft,
     logoAlt: "Microsoft",
     bullets: [
-      "Bing Ads (AI + Research): improved ad experience and launched new ad products.",
-      "Dynamic Search Ads: landing-page extraction and Transformer-based generation — +1.5% US daily RPM, 2%+ international RPM.",
+      "Bing Ads (AI + Research): Improved ad experience and launched new ad products.",
+      "Dynamic Search Ads: Landing-page extraction and Transformer-based generation — +1.5% US daily RPM, 2%+ international RPM.",
       "Web Page Similarity Graph: TwinBERT / USE embeddings with HNSW / NSG ANN for next-link prediction.",
       "Dynamic links with ads: DeepXML categories + Ads RoBERTa scoring — +1.5% US CTR.",
       "Landing-page summarization (BERTSUM) used in ad title assets; latency tooling adopted across services.",
@@ -114,10 +113,10 @@ export const ROLES: Role[] = [
     logo: LOGOS.microsoft,
     logoAlt: "Microsoft",
     bullets: [
-      "Rich Ads experience (RnR): online infra and rich ad experiences for non-US markets.",
-      "Ads-Composition: unified, parallelized pre-serve pipeline for ads and decorations — lower latency, faster experimentation.",
-      "Related Product Annotation: surfaced relevant products for retail queries — higher CTR on text ads and product links.",
-      "Latency tooling: utilities to analyze critical latency paths, reused across services.",
+      "Rich Ads experience (RnR): Online infra and rich ad experiences for non-US markets.",
+      "Ads-Composition: Unified, parallelized pre-serve pipeline for ads and decorations — lower latency, faster experimentation.",
+      "Related Product Annotation: Surfaced relevant products for retail queries — higher CTR on text ads and product links.",
+      "Latency tooling: Utilities to analyze critical latency paths, reused across services.",
     ],
   },
 ];
@@ -160,7 +159,7 @@ export const INTERNSHIPS: Internship[] = [
     location: "Bangalore, India",
     bullets: [
       "Worked with the Amazon Pricing team to predict shipping prices for products on amazon.com.",
-      "Implemented the end-to-end Pricing Attribute Prediction Service using Amazon Simple Workflow Service to automate the ML model-building process.",
+      "Implemented the End-to-End Pricing Attribute Prediction Service using Amazon Simple Workflow Service to automate the ML model-building process.",
     ],
   },
   {

@@ -360,7 +360,7 @@ function Earlier() {
   return (
     <section className="relative py-32 px-6">
       <div className="mx-auto max-w-6xl">
-        <SectionHeading label="03 / Earlier" title="Before all this." accent="#06b6d4" />
+        <SectionHeading label="03 / Earlier" title="Internships." accent="#06b6d4" />
 
         <div className="grid gap-8 md:grid-cols-3">
           {INTERNSHIPS.map((it, idx) => (
@@ -446,16 +446,13 @@ function Contact() {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <div className="font-mono text-xs uppercase tracking-[0.25em] text-white/50 mb-6">
-            05 / Contact
-          </div>
           <h2
             className="font-sans font-black tracking-tighter text-white leading-[0.95] mb-8"
             style={{ fontSize: "clamp(3rem, 8vw, 7rem)" }}
           >
             Let&apos;s{" "}
             <span
-              className="italic bg-clip-text text-transparent"
+              className="italic bg-clip-text text-transparent inline-block pr-[0.22em]"
               style={{
                 backgroundImage:
                   "linear-gradient(90deg, #ff6b35 0%, #a855f7 100%)",
