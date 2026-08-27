@@ -123,6 +123,16 @@ export const ROLES: Role[] = [
 
 export const PUBLICATIONS: Publication[] = [
   {
+    title:
+      "From Preferences to Principles: Rubric-Based Alignment for Grounded Knowledge Answers",
+    authors:
+      "Aman Saini, Priyanshu Kumar, Eric Peng, Kai Yuan, Harsh Girase, Wanming Chen",
+    venue: "arXiv 2026",
+    url: "https://arxiv.org/abs/2608.23812",
+    abstract:
+      "A rubric-based alignment framework for open-domain question-answering that replaces coarse preference signals with fine-grained, verifiable and interpretable rubrics to improve the grounding and quality of knowledge answers.",
+  },
+  {
     title: "Spivavtor: An Instruction-Tuned Ukrainian Text Editing Model",
     authors: "Aman Saini, Artem Chernodub, Vipul Raheja, Vivek Kulkarni",
     venue: "arXiv 2024",
